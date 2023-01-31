@@ -45,7 +45,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 
 
-const spaceTexture = new THREE.TextureLoader().load('https://i5.walmartimages.com/asr/43c1dfa6-774e-43e7-b92a-647068a739e5.f21b4b969359f2f47c21d8f0f1a3b190.jpeg');
+const spaceTexture = new THREE.TextureLoader().load('minion.jpg');
 scene.background = spaceTexture;
 
 
