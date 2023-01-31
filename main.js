@@ -31,7 +31,7 @@ loader.load( 'donny.glb', function ( gltf ) {
 	console.error( error );
 
 } );
-scene.scale.set(0.01, 0.01, 0.01);
+scene.scale.set(0.1, 0.1, 0.1);
 
 renderer.outputEncoding = THREE.sRGBEncoding;
 
@@ -58,10 +58,13 @@ const cat = new THREE.Mesh(
 );
 
 scene.add(cat);
+//scene.position.y = -25;
 
 
 cat.scale.set(20, 20, 20);
-cat.position.y = -50;
+cat.position.y = -70;
+// cat.position.x = -90;
+camera.position.y = -300;
 
 
 function moveCamera(){
@@ -70,9 +73,9 @@ function moveCamera(){
   cat.rotation.y += 0.075;
   cat.rotation.z += 0.05;
 
-  camera.position.z = t * -0.01;
-  // camera.position.x = t * -0.00001;
-  // camera.position.y = t * -0.00001;
+  //camera.position.z = t * -1;
+   camera.position.x = t * -0.01;
+   camera.position.y = t * -0.01;
 
 }
 
