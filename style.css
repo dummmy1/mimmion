@@ -1,4 +1,4 @@
-/* @import url("https://use.typekit.net/jmk3xov.css"); */
+@import url("https://use.typekit.net/jmk3xov.css");
 
 canvas {
   position: fixed;
@@ -78,4 +78,19 @@ canvas {
 
   .left {
     grid-column: 6 / 12;
+  }
+
+
+  #bobo {
+    width: 600px;
+    border-radius: 1%;
+  }
+  #draben {
+    width: 1200px;
+    border-radius: 1%;
+  }
+
+  video[poster] {
+    width: 1200px;
+    height: 700px;
   }

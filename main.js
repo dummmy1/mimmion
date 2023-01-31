@@ -22,7 +22,7 @@ renderer.render(scene, camera);
 
 const loader = new GLTFLoader();
 
-loader.load( 'donny.glb', function ( gltf ) {
+loader.load( 'models/donny.glb', function ( gltf ) {
 
 	scene.add( gltf.scene );
 
@@ -45,7 +45,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 
 
-const spaceTexture = new THREE.TextureLoader().load('minion.jpg');
+const spaceTexture = new THREE.TextureLoader().load('images/minion.jpg');
 scene.background = spaceTexture;
 
 
@@ -72,6 +72,10 @@ function moveCamera(){
   cat.rotation.x += 0.05;
   cat.rotation.y += 0.075;
   cat.rotation.z += 0.05;
+
+  scene.rotateY(0.08);
+  //scene.rotateX(0.02);
+  //scene.rotateZ(0.01);
 
   //camera.position.z = t * -1;
    camera.position.x = t * -0.01;
