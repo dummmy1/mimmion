@@ -73,7 +73,7 @@ function moveCamera(){
   cat.rotation.y += 0.075;
   cat.rotation.z += 0.05;
 
-  scene.rotateY(0.08);
+  scene.rotateY(0.07);
   //scene.rotateX(0.02);
   //scene.rotateZ(0.01);
 
