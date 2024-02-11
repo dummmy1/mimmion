@@ -1,1 +1,1 @@
-Three.js kokeilua ~ pyörivä blender-minion malli
+Three.js testing ~ spinning blender-model minion in the background
